@@ -1,0 +1,3 @@
+
+
+    window.alert(Math.random());

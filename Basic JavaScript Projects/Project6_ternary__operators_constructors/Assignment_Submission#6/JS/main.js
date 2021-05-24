@@ -4,6 +4,7 @@ function family(first, last, age, eye) {   // Constructor function for family ob
     this.age = age;
     this.eyecolor = eye;
 }
+
 var myfather = new family("Salvador", "Estolas", 64, "black"); //create a family objects
 var mymother = new family("Elsa", "Payba", 67, "black");
 

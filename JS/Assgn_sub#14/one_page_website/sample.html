@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+	    <title>One_Page_WebsiteXXXX</title>
+
+        
+        <link rel="stylesheet" href="./CSS/animation.css">
+        
+        <link rel="stylesheet" href="./CSS/modal.css">
+        <script src="./JS/one_page_website.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+    <!--NAV-->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home"><li>HOME</li></a>
+                <a href="#about"><li>ABOUT</li></a>
+                <a href="#contact"><li>CONTACT</li></a>
+            </ul>
+        </div>    
+
+    </div>
+    <!--END NAV-->
+
+    <!--HOME-->
+    <div id="home">
+        <div class="container">
+            <div class="text-center">
+                <h2>Hello, I'm</h2>
+                <h1>Mike Estolas</h1>
+                <h3>A Student of AOLCC</h3>
+            </div>
+
+        </div>
+
+    </div>
+    <!--END HOME-->
+
+<h2 style="text-align:center">My Province</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="./images/bora/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/bora/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/bora/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/bora/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/bora/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/bora/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/bora/3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/bora/4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Wild Beach">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Crazy Sun">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Night life">
+    </div>
+  </div>
+</div>
+
+<!--ABOUT-->
+<div id="about">
+    <div class="container" >
+        <h1>About me</h1>
+        
+        <div class="flex-container">
+
+             <!--====== ABOUT PART START ======-->
+
+<section id="about" class="about-area pt-125 pb-130">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="section-title text-center">
+                <h2 class="title">About Me</h2>
+                <p>This is my One Page Website.</p>
+            </div> <!-- section title -->
+        </div>
+    </div> <!-- row -->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="about-content mt-50">
+                <h5 class="about-title">Hi There! I'm Mike Estolas</h5>
+                <p>This is just a practice of my one page website.</p>
+                <ul class="clearfix">
+                    <li>
+                        <div class="single-info d-flex align-items-center">
+                            <div class="info-icon">
+                                <i class="lni-calendar"></i>
+                            </div>
+                            <div class="info-text">
+                                <p><span>Date of birth:</span> 8 June 1976</p>
+                            </div>
+                        </div> <!-- single info -->
+                    </li>
+                    <li>
+                        <div class="single-info d-flex align-items-center">
+                            <div class="info-icon">
+                                <i class="lni-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <p><span>Email:</span> mike@mysite.com</p>
+                            </div>
+                        </div> <!-- single info -->
+                    </li>
+                    <li>
+                        <div class="single-info d-flex align-items-center">
+                            <div class="info-icon">
+                                <i class="lni-phone-handset"></i>
+                            </div>
+                            <div class="info-text">
+                                <p><span>Phone:</span> +1-202-555-0138</p>
+                            </div>
+                        </div> <!-- single info -->
+                    </li>
+                    <li>
+                        <div class="single-info d-flex align-items-center">
+                            <div class="info-icon">
+                                <i class="lni-map-marker"></i>
+                            </div>
+                            <div class="info-text">
+                                <p><span>Location:</span> Toronto, Canada</p>
+                            </div>
+                        </div> <!-- single info -->
+                    </li>
+                </ul>
+            </div> <!-- about content -->
+        </div>
+        <div class="col-xl-5 offset-xl-1 col-lg-6">
+            <div class="about-skills pt-25">
+                <div class="skill-item mt-25">
+                    <div class="skill-header">
+                        <h6 class="skill-title">HTML</h6>
+                        <div class="skill-percentage">
+                            <div class="count-box counted">
+                                <span class="counter">80</span>
+                            </div>
+                            %
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar-inner">
+                            <div class="bar progress-line" data-width="80"></div>
+                        </div>
+                    </div>
+                </div> <!-- skill item -->
+                <div class="skill-item mt-25">
+                    <div class="skill-header">
+                        <h6 class="skill-title">CSS</h6>
+                        <div class="skill-percentage">
+                            <div class="count-box counted">
+                                <span class="counter">60</span>
+                            </div>
+                            %
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar-inner">
+                            <div class="bar progress-line" data-width="60"></div>
+                        </div>
+                    </div>
+                </div> <!-- skill item -->
+                <div class="skill-item mt-25">
+                    <div class="skill-header">
+                        <h6 class="skill-title">Photoshop</h6>
+                        <div class="skill-percentage">
+                            <div class="count-box counted">
+                                <span class="counter">50</span>
+                            </div>
+                            %
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar-inner">
+                            <div class="bar progress-line" data-width="50"></div>
+                        </div>
+                    </div>
+                </div> <!-- skill item -->
+                <div class="skill-item mt-25">
+                    <div class="skill-header">
+                        <h6 class="skill-title">Sketch</h6>
+                        <div class="skill-percentage">
+                            <div class="count-box counted">
+                                <span class="counter">90</span>
+                            </div>
+                            %
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar-inner">
+                            <div class="bar progress-line" data-width="90"></div>
+                        </div>
+                    </div>
+                </div> <!-- skill item -->
+            </div> <!-- about skills -->
+        </div>
+    </div> <!-- row -->
+</div> <!-- container -->
+</section>
+
+<!--====== ABOUT PART ENDS ======-->
+</div>
+</div>
+</div>
+<!--END ABOUT-->
+
+<!--CONTACT-->
+<section id="contact">
+    <div class="container">
+        <div class="heading-pending">
+            <h1 class="heading-padding">Contact</h1>
+            <div class="reservation">
+                <h2><span>You can contact me on my email below</span>
+                          <br/>Mikeestolas@gmail.com  
+                </h2>
+                <p class="rsvp-text">
+                    Thank you for visiting my site!!!
+                </p>
+                
+                </div>    
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--END CONTACT-->
+
+<!--FOOTER-->
+<div id="footer">
+   Mike Estolas- One Page Website &nbsp;|&nbsp; &copy; 2021 
+</div>
+<!--END FOOTER-->
+
+    
+
+
+
+    
+</body>
+</html>
